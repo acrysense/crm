@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BURO ESTATE & DEVELOPMENT - CRM</title>
+	<meta property="og:title" content="BURO ESTATE & DEVELOPMENT - CRM">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="BURO ESTATE & DEVELOPMENT - CRM">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- auth -->
+	<div class="auth" id="auth">
+		<div class="auth__wrap">
+			<div class="auth__wrapper">
+				<div class="auth__top">
+					<picture class="auth__logotype">
+						<img src="img/logotype.svg" width="134" height="61" alt="BURO ESTATE & DEVELOPMENT">
+					</picture>
+					<h1 class="auth__heading">Добро пожаловать!</h1>
+					<p class="auth__description">Войдите в систему, чтобы начать</p>
+				</div>
+				<form action="#" class="auth__form auth-form">
+					<div class="input-field auth-form__input">
+						<label for="login-email" class="input-field__label">Ваш email</label>
+						<div class="input-field__inner">
+							<svg class="input-field__icon">
+								<use xlink:href="img/sprite.svg#icon-email"></use>
+							</svg>
+							<input type="email" id="login-email" class="input-field__input" placeholder="Email">
+						</div>
+						<span class="input-field__error">Некорректная авторизация</span>
+					</div>
+					<div class="input-field auth-form__input">
+						<label for="login-password" class="input-field__label">Ваш пароль</label>
+						<div class="input-field__inner">
+							<svg class="input-field__icon">
+								<use xlink:href="img/sprite.svg#icon-password"></use>
+							</svg>
+							<input type="password" id="login-password" class="input-field__input" placeholder="Пароль">
+						</div>
+						<span class="input-field__error">Некорректная авторизация</span>
+					</div>
+					<div class="auth-form__bottom">
+						<a href="#" class="auth-form__link">Забыли пароль?</a>
+						<button class="auth-form__btn btn" disabled>Войти</button>
+					</div>
+				</form>
+			</div>
+			<p class="auth__copyright">© 2023, Buro Estate.</p>
+		</div>
+	</div>
+	<!-- end of auth -->
+	<!-- scripts -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
