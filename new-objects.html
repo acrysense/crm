@@ -53,7 +53,7 @@
 								</div>
 							</li>
 							<li class="sidebar-nav__item">
-								<div class="sidebar-nav__elem ">
+								<div class="sidebar-nav__elem is--open">
 									<a href="#" class="sidebar-nav__link sidebar-nav__link--trigger">
 										<svg>
 											<use xlink:href="img/sprite.svg#icon-zagorod"></use>
@@ -89,7 +89,7 @@
 											</a>
 										</li>
 										<li class="sidebar-nav__subitem">
-											<a href="new-objects.html" class="sidebar-nav__link ">
+											<a href="new-objects.html" class="sidebar-nav__link is--active">
 												<svg>
 													<use xlink:href="img/sprite.svg#icon-object"></use>
 												</svg>
@@ -123,7 +123,7 @@
 							<span class="hamburger__inner"></span>
 							<span class="hamburger__inner"></span>
 						</button>
-						<h1 class="header__heading">Главная</h1>
+						<h1 class="header__heading">Новые объекты</h1>
 					</div>
 					<div class="header__inner">
 						<div class="c-search">
@@ -142,6 +142,106 @@
 				</div>
 			</header>
 			<!-- end of header -->
+			<!-- atables -->
+			<div class="atables" id="atables">
+				<div class="atables__table-wrap">
+					<table class="atables__table">
+						<thead class="atables__thead">
+							<tr class="atables__tr">
+								<td class="atables__td">ID</td>
+								<td class="atables__td" style="width: 180px;">Изображение</td>
+								<td class="atables__td">КП/ЖК</td>
+								<td class="atables__td">№ объекта</td>
+								<td class="atables__td">Тип</td>
+								<td class="atables__td">Площ. дома</td>
+								<td class="atables__td">Площ. участка</td>
+								<td class="atables__td">Стоимость</td>
+								<td class="atables__td">Валюта</td>
+								<td class="atables__td">Комис...</td>
+								<td class="atables__td">Направ..</td>
+								<td class="atables__td">Наиме...</td>
+								<td class="atables__td">Обновлено</td>
+							</tr>
+						</thead>
+						<tbody class="atables__tbody">
+							<tr class="atables__tr">
+								<td class="atables__td">1755</td>
+								<td class="atables__td">
+									<a href="#" class="atables__object">
+										<picture class="atables__object-img">
+											<img src="img/objects-01.jpg" alt="Image">
+										</picture>
+										<svg class="atables__object-icon">
+											<use xlink:href="img/sprite.svg#icon-more-object"></use>
+										</svg>
+									</a>
+								</td>
+								<td class="atables__td">Резиденция <br>Бенилкс</td>
+								<td class="atables__td">11234</td>
+								<td class="atables__td">Дом</td>
+								<td class="atables__td">39</td>
+								<td class="atables__td">750</td>
+								<td class="atables__td">3 300 000</td>
+								<td class="atables__td">$</td>
+								<td class="atables__td">3%</td>
+								<td class="atables__td">Новор..</td>
+								<td class="atables__td">Жуков...</td>
+								<td class="atables__td">12.11.2023</td>
+							</tr>
+							<tr class="atables__tr">
+								<td class="atables__td">1755</td>
+								<td class="atables__td">
+									<a href="#" class="atables__object">
+										<picture class="atables__object-img">
+											<img src="img/objects-01.jpg" alt="Image">
+										</picture>
+										<svg class="atables__object-icon">
+											<use xlink:href="img/sprite.svg#icon-more-object"></use>
+										</svg>
+									</a>
+								</td>
+								<td class="atables__td">Резиденция <br>Бенилкс</td>
+								<td class="atables__td">11234</td>
+								<td class="atables__td">Дом</td>
+								<td class="atables__td">39</td>
+								<td class="atables__td">750</td>
+								<td class="atables__td">3 300 000</td>
+								<td class="atables__td">$</td>
+								<td class="atables__td">3%</td>
+								<td class="atables__td">Новор..</td>
+								<td class="atables__td">Жуков...</td>
+								<td class="atables__td">12.11.2023</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="atables__bottom">
+					<a href="#" class="atables__more btn btn--sm btn--border">Показать еще</a>
+					<div class="pagination atables__pagination">
+						<ul class="pagination__list">
+							<li class="pagination__item is--active">
+								<a href="#" class="pagination__btn">1</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__btn">2</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__btn">3</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__btn">4</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__btn" disabled>...</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__btn">58</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end of atables -->
 		</div>
 	</div>
 	<!-- end of apanel -->
