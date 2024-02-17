@@ -211,7 +211,25 @@
 								</div>
 								<div class="information__item">
 									<div class="information__left">
-										<span class="information__label">Стоимость</span>
+										<div class="information__inner">
+											<span class="information__label">Стоимость</span>
+											<div class="c-prices information__prices">
+												<div class="c-prices__wrapper">
+													<div class="c-prices__item">
+														<input type="radio" id="prices-01" class="c-prices__input" name="price" checked>
+														<label for="prices-01" class="c-prices__label">₽</label>
+													</div>
+													<div class="c-prices__item">
+														<input type="radio" id="prices-02" class="c-prices__input" name="price">
+														<label for="prices-02" class="c-prices__label">$</label>
+													</div>
+													<div class="c-prices__item">
+														<input type="radio" id="prices-03" class="c-prices__input" name="price">
+														<label for="prices-03" class="c-prices__label">€</label>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="information__right">
 										<span class="information__help">Создано: 02.10.2023 (78 дней назад)</span>
@@ -576,11 +594,361 @@
 										</div>
 									</div>
 								</div>
+								<div class="information__item">
+									<div class="c-categories c-categories--lg information__categories">
+										<ul class="c-categories__list">
+											<li class="c-categories__item">
+												<span class="c-categories__elem">Эксклюзив</span>
+											</li>
+											<li class="c-categories__item">
+												<span class="c-categories__elem">Закрытые продажи</span>
+											</li>
+											<li class="c-categories__item">
+												<span class="c-categories__elem">Первичка</span>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="tabs__wrapper"></div>
+				<div class="tabs__wrapper">
+					<div class="information">
+						<div class="information__wrap information__wrap--wide">
+							<div class="information__wrapper">
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Загрузить фото</span>
+									</div>
+									<div class="information__right">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="information__wrap information__wrap--wide">
+							<div class="information__top">
+								<h2 class="information__heading">Планировка</h2>
+							</div>
+							<div class="information__wrapper">
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Цоколь</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<textarea id="object-cokol" class="input-field__textarea" placeholder="Значение"></textarea>
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">1 этаж</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<textarea id="object-cokol" class="input-field__textarea" placeholder="Значение"></textarea>
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">2 этаж</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<textarea id="object-cokol" class="input-field__textarea" placeholder="Значение"></textarea>
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">3 этаж</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<textarea id="object-cokol" class="input-field__textarea" placeholder="Значение"></textarea>
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Планировки</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<textarea id="object-cokol" class="input-field__textarea" placeholder="Значение"></textarea>
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="information__wrap">
+							<div class="information__top">
+								<h2 class="information__heading">Характеристики дома</h2>
+							</div>
+							<div class="information__wrapper">
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Отделка</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Спален</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Санузлов</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Материал стен</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Кровля</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Фундамент</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Облицовка</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Окна</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Электричество (кВт)</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Коммуникация</span>
+									</div>
+									<div class="information__right">
+										<div class="c-categories information__categories">
+											<ul class="c-categories__list">
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Приточная вентиляция</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Канализация</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Подогрев полов</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Артезианская скважина</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Кондиционирование</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Помещение для персонала <br>(кол-во человек)</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Доп. строения</span>
+									</div>
+									<div class="information__right">
+										<div class="c-categories information__categories">
+											<ul class="c-categories__list">
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Терраса</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Бассейн</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Спортзал</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Камин</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Лифт</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Баня</span>
+												</li>
+												<li class="c-categories__item">
+													<span class="c-categories__elem">Гараж</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="information__wrap">
+							<div class="information__top">
+								<h2 class="information__heading">Характеристики участка</h2>
+							</div>
+							<div class="information__wrapper">
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Тип участка</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Категория</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-name" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="information__wrap">
+							<div class="information__top">
+								<h2 class="information__heading">Файлы</h2>
+							</div>
+							<div class="information__wrapper">
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Документы</span>
+									</div>
+									<div class="information__right">
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Видео</span>
+									</div>
+									<div class="information__right">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="tabs__wrapper">
 					<div class="chat">
 						<div class="chat__wrapper">
@@ -647,7 +1015,7 @@
 						<div class="chat__controls">
 							<div class="input-field chat__input">
 								<div class="input-field__inner">
-									<textarea id="object-chat" class="input-field__textarea" placeholder="Введите комментарий"></textarea>
+									<input type="text" id="object-chat" class="input-field__input" placeholder="Введите комментарий">
 								</div>
 							</div>
 							<button class="chat__btn btn" disabled>Отправить</button>
