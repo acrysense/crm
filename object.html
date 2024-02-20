@@ -156,7 +156,7 @@
 							<button class="tabs__tab">Показы <span>22</span></button>
 						</li>
 					</ul>
-					<button class="apanel__trigger">
+					<button class="apanel__trigger modal-btn" data-id="change-history">
 						<svg>
 							<use xlink:href="img/sprite.svg#icon-time"></use>
 						</svg>
@@ -1611,9 +1611,157 @@
 		</div>
 	</div>
 	<!-- end of apanel -->
+	<!-- modals -->
+	<div class="modal" id="view-map">
+		<div class="modal__wrap modal__wrap--lg">
+			<div class="modal__wrapper">
+				<div class="modal__top">
+					<h3 class="modal__heading">Координаты на карте (GPS 55º47'51.53'N 37º1'42.61'E)</h3>
+					<button class="modal__close-btn modal__close">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__main">
+					<div class="modal__map" id="location-map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="change-history">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__top">
+					<h3 class="modal__heading">История изменений</h3>
+					<button class="modal__close-btn modal__close">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__main">
+					<div class="change-history">
+						<div class="change-history__search">
+							<svg class="change-history__search-icon">
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+							<input type="text" class="change-history__search-input" placeholder="Поиск">
+						</div>
+						<div class="change-history__wrapper">
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+									<span class="change-history__help">2 минуты назад</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
+									<span class="change-history__help">5 часов назад</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
+									<span class="change-history__help">Вчера в 22:50</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+									<span class="change-history__help">2 минуты назад</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
+									<span class="change-history__help">5 часов назад</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
+									<span class="change-history__help">Вчера в 22:50</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+									<span class="change-history__help">2 минуты назад</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=077ae27d-1d73-4911-93fe-71161e91577a&lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+		ymaps.ready(function() {
+			var myMapContacts = new ymaps.Map('location-map', {
+				center: [55.7389194, 37.5781166],
+				zoom: 13,
+				controls: []
+			}, {
+				zoomControlSize: 'small'
+			});
+
+			myMapContacts.controls.add('zoomControl', {
+				float: 'none',
+				position: {
+					top: 58,
+					right: 10
+				}
+			});
+
+			myMapContacts.controls.add('geolocationControl', {
+				float: 'none',
+				position: {
+					top: 10,
+					right: 10
+				}
+			});
+
+			var circleIconLayout = ymaps.templateLayoutFactory.createClass(`
+                <div class="map-pin-icon">
+                    <img src="img/icon-pin.svg" alt="Метка">
+                </div>`);
+
+			var myPlacemark = new ymaps.Placemark([55.7389194, 37.5781166], {}, {
+				iconLayout: circleIconLayout,
+			});
+
+			myMapContacts.geoObjects
+				.add(myPlacemark)
+		});
+	</script>
 </body>
 
 </html>
