@@ -1614,6 +1614,307 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal" id="filter">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__top">
+					<h3 class="modal__heading">Фильтр (0)</h3>
+					<button class="modal__close-btn modal__close">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__main">
+					<div class="modal-form">
+						<div class="modal-form__inner modal-form__inner--bottom">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Статус недвижимости</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="modal-form__item">
+								<div class="modal-form__checkboxes">
+									<div class="square-checkbox modal-form__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-modal-1-01">
+										<label for="filter-modal-1-01" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Эксклюзив</span>
+										</label>
+									</div>
+									<div class="square-checkbox modal-form__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-modal-1-02">
+										<label for="filter-modal-1-02" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Закрытые продажи</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Направление</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Удаленность от МКАД (км)</span>
+								<div class="input-field modal-form__input">
+									<div class="input-field__wrapper">
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">КП/ЖК</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Валюта</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Стоимость (₽)</span>
+								<div class="input-field modal-form__input">
+									<div class="input-field__wrapper">
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="number" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="number" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Тип объекта</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Отделка</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Площадь дома (м²) </span>
+								<div class="input-field modal-form__input">
+									<div class="input-field__wrapper">
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="number" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="number" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Количество спален</span>
+								<div class="input-field modal-form__input">
+									<div class="input-field__wrapper">
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="number" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="number" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Материал стен</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Площадь участка (сотки)</span>
+								<div class="input-field modal-form__input">
+									<div class="input-field__wrapper">
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="number" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+										<div class="input-field__item">
+											<div class="input-field__inner">
+												<input type="number" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Тип участка</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Оснащение</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Куратор</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Контрагент</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="modal-form__item modal-form__item--row">
+								<span class="modal-form__label">Статус контрагента</span>
+								<div class="default-select modal-form__select">
+									<select class="js-select">
+										<option value="0" data-placeholder="true">Выберите значение</option>
+										<option value="1">Значение 1</option>
+										<option value="2">Значение 2</option>
+										<option value="3">Значение 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal__bottom">
+					<a href="#" class="modal__btn btn btn--sm btn--grey" disabled>Сбросить фильтр</a>
+					<a href="#" class="modal__btn modal__btn--wide btn btn--sm" disabled>Показать</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
