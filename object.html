@@ -125,11 +125,11 @@
 					</div>
 					<div class="header__inner">
 						<div class="c-search">
-							<button class="c-search__trigger">
+							<a href="search.html" class="c-search__trigger">
 								<svg>
 									<use xlink:href="img/sprite.svg#icon-search"></use>
 								</svg>
-							</button>
+							</a>
 						</div>
 						<div class="c-user header__user">
 							<a href="#" class="c-user__img">
@@ -209,7 +209,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="information__item">
+								<div class="information__item information__item--desktop">
 									<div class="information__left">
 										<div class="information__inner">
 											<span class="information__label">Стоимость</span>
@@ -240,9 +240,232 @@
 												</div>
 												<span class="input-field__error">Данные введены неверно</span>
 											</div>
+											<div class="c-price-history information__price-history">
+												<button class="c-price-history__trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-green"></use>
+													</svg>
+												</button>
+												<div class="c-price-history__dropdown">
+													<div class="c-price-history__top">
+														<span class="c-price-history__title">История изменения цены</span>
+													</div>
+													<div class="c-price-history__main">
+														<div class="c-price-history__inner">
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem">02.10.2023</span>
+															</div>
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem">12 000 000 ₽ </span>
+															</div>
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem"></span>
+															</div>
+														</div>
+														<div class="c-price-history__inner">
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem">20.10.2023</span>
+															</div>
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem">10 000 000 ₽ </span>
+															</div>
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem c-price-history__elem--green">2 000 000 ₽</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- <div class="c-price-history information__price-history">
+                                                <button class="c-price-history__trigger">
+                                                    <svg>
+                                                        <use xlink:href="img/sprite.svg#icon-equals"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="c-price-history__dropdown">
+                                                    <div class="c-price-history__top">
+                                                        <span class="c-price-history__title">История изменения цены</span>
+                                                    </div>
+                                                    <div class="c-price-history__main">
+                                                        <div class="c-price-history__inner">
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">02.10.2023</span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">12 000 000 ₽ </span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-price-history__inner">
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">20.10.2023</span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">10 000 000 ₽ </span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem c-price-history__elem--green">2 000 000 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-price-history__inner">
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">Сегодня в 14:53</span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">10 000 000 ₽ </span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+											<!-- <div class="c-price-history information__price-history">
+                                                <button class="c-price-history__trigger">
+                                                    <svg>
+                                                        <use xlink:href="img/sprite.svg#icon-arrow-red"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="c-price-history__dropdown">
+                                                    <div class="c-price-history__top">
+                                                        <span class="c-price-history__title">История изменения цены</span>
+                                                    </div>
+                                                    <div class="c-price-history__main">
+                                                        <div class="c-price-history__inner">
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">02.10.2023</span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">12 000 000 ₽ </span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-price-history__inner">
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">20.10.2023</span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">10 000 000 ₽ </span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem c-price-history__elem--green">2 000 000 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-price-history__inner">
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">Сегодня в 14:53</span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">10 000 000 ₽ </span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem c-price-history__elem--red"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-price-history__inner">
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">Сегодня в 14:54</span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem">11 000 000 ₽ </span>
+                                                            </div>
+                                                            <div class="c-price-history__item">
+                                                                <span class="c-price-history__elem c-price-history__elem--red">1 000 000 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
 											<button class="information__btn btn">Актуализировать</button>
 										</div>
 										<span class="information__help">Обновлено: 20.10.2023</span>
+									</div>
+								</div>
+								<div class="information__item information__item--mobile">
+									<div class="information__left">
+										<div class="information__inner">
+											<span class="information__label">Стоимость</span>
+										</div>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<div class="c-prices input-field__prices">
+													<div class="c-prices__wrapper">
+														<div class="c-prices__item">
+															<input type="radio" id="prices-01" class="c-prices__input" name="price" checked>
+															<label for="prices-01" class="c-prices__label">₽</label>
+														</div>
+														<div class="c-prices__item">
+															<input type="radio" id="prices-02" class="c-prices__input" name="price">
+															<label for="prices-02" class="c-prices__label">$</label>
+														</div>
+														<div class="c-prices__item">
+															<input type="radio" id="prices-03" class="c-prices__input" name="price">
+															<label for="prices-03" class="c-prices__label">€</label>
+														</div>
+													</div>
+												</div>
+												<input type="text" id="object-name" class="input-field__input" placeholder="Стоимость">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--mobile">
+									<div class="information__group">
+										<span class="information__help">Создано: 02.10.2023 (78 дней назад)</span>
+										<span class="information__help">Обновлено: 20.10.2023</span>
+									</div>
+									<div class="information__group">
+										<div class="information__controls">
+											<div class="c-price-history information__controls-item">
+												<button class="c-price-history__trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-green"></use>
+													</svg>
+												</button>
+												<div class="c-price-history__dropdown">
+													<div class="c-price-history__top">
+														<span class="c-price-history__title">История изменения цены</span>
+													</div>
+													<div class="c-price-history__main">
+														<div class="c-price-history__inner">
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem">02.10.2023</span>
+															</div>
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem">12 000 000 ₽ </span>
+															</div>
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem"></span>
+															</div>
+														</div>
+														<div class="c-price-history__inner">
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem">20.10.2023</span>
+															</div>
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem">10 000 000 ₽ </span>
+															</div>
+															<div class="c-price-history__item">
+																<span class="c-price-history__elem c-price-history__elem--green">2 000 000 ₽</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<button class="btn-circle information__controls-item">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-refresh"></use>
+												</svg>
+											</button>
+										</div>
 									</div>
 								</div>
 								<div class="information__item">
@@ -459,9 +682,12 @@
 												</div>
 												<span class="input-field__error">Данные введены неверно</span>
 											</div>
-											<button class="information__btn btn">Смотреть на карте</button>
+											<button class="information__btn information__btn--desktop btn modal-btn" data-id="view-map">Смотреть на карте</button>
 										</div>
 									</div>
+								</div>
+								<div class="information__item information__item--mobile">
+									<button class="information__btn btn btn--sm modal-btn" data-id="view-map">Смотреть на карте</button>
 								</div>
 								<div class="information__item">
 									<div class="information__left">
@@ -614,6 +840,58 @@
 					</div>
 				</div>
 				<div class="tabs__wrapper">
+					<div class="photos-slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-01.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-02.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-03.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-04.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-01.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-03.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-02.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-04.jpg" alt="Iamge">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<button class="swiper-button-next" aria-label="Далее">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+							</svg>
+						</button>
+						<div class="swiper-pagination"></div>
+					</div>
 					<div class="information">
 						<div class="information__wrap information__wrap--wide">
 							<div class="information__wrapper">
@@ -622,6 +900,106 @@
 										<span class="information__label">Загрузить фото</span>
 									</div>
 									<div class="information__right">
+										<div class="information__photos">
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-01" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-01" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+													<button class="photo-upload__delete">
+														<svg class="photo-upload__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-02" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-02" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+													<button class="photo-upload__delete">
+														<svg class="photo-upload__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-03" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-03" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+													<button class="photo-upload__delete">
+														<svg class="photo-upload__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-0" class="photo-upload__label">
+													<input type="file" id="photo-upload-04" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded is--hidden">
+													<picture class="photo-upload__img">
+														<!-- <img src="img/objects-01.jpg" alt="Image"> -->
+													</picture>
+													<button class="photo-upload__delete">
+														<svg class="photo-upload__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Описание</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<textarea id="object-cokol" class="input-field__textarea" placeholder="">Коттеджный посёлок «Резиденции Бенилюкс» – посёлок премиум-класса, в котором сочетаются европейский комфорт и уютная атмосфера родной русской природы.</textarea>
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Дополнительно</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<textarea id="object-cokol" class="input-field__textarea" placeholder=""></textarea>
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -688,11 +1066,46 @@
 										<span class="information__label">Планировки</span>
 									</div>
 									<div class="information__right">
-										<div class="input-field information__input">
-											<div class="input-field__inner">
-												<textarea id="object-cokol" class="input-field__textarea" placeholder="Значение"></textarea>
+										<div class="information__photos">
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-11" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-11" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+												</div>
 											</div>
-											<span class="input-field__error">Данные введены неверно</span>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-12" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-12" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+												</div>
+											</div>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-13" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-13" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -936,6 +1349,44 @@
 										<span class="information__label">Документы</span>
 									</div>
 									<div class="information__right">
+										<div class="documents information__documents">
+											<div class="documents__wrapper">
+												<div class="documents__item">
+													<div class="documents__item-inner">
+														<picture class="documents__img">
+															<img src="img/icon-pdf.svg" alt="Icon">
+														</picture>
+														<div class="documents__body">
+															<span class="documents__name">Отчет 12. 23</span>
+															<span class="documents__help">9.48МБ</span>
+														</div>
+													</div>
+													<a href="#" class="documents__trigger" download>
+														<span>Скачать</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-download"></use>
+														</svg>
+													</a>
+												</div>
+												<div class="documents__item">
+													<div class="documents__item-inner">
+														<picture class="documents__img">
+															<img src="img/icon-word.svg" alt="Icon">
+														</picture>
+														<div class="documents__body">
+															<span class="documents__name">Отчет 12. 23</span>
+															<span class="documents__help">9.48МБ</span>
+														</div>
+													</div>
+													<a href="#" class="documents__trigger" download>
+														<span>Скачать</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-download"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="information__item information__item--start">
@@ -943,6 +1394,47 @@
 										<span class="information__label">Видео</span>
 									</div>
 									<div class="information__right">
+										<div class="information__photos">
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-11" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-11" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+												</div>
+											</div>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-12" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-12" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+												</div>
+											</div>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-13" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-13" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
