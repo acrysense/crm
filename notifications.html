@@ -135,17 +135,79 @@
 									<use xlink:href="img/sprite.svg#icon-search"></use>
 								</svg>
 							</a>
-							<form action="#" class="c-search__inner">
-								<svg class="c-search__icon">
-									<use xlink:href="img/sprite.svg#icon-search"></use>
-								</svg>
-								<input type="text" class="c-search__input" placeholder="Поиск">
-								<button class="c-search__close">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+							<div class="c-search__dropdown">
+								<form action="#" class="c-search__form">
+									<svg class="c-search__icon">
+										<use xlink:href="img/sprite.svg#icon-search"></use>
 									</svg>
-								</button>
-							</form>
+									<input type="text" class="c-search__input" placeholder="Поиск">
+									<button class="c-search__close">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+										</svg>
+									</button>
+								</form>
+								<!-- add class 'is--active' for visible results -->
+								<div class="c-search__results">
+									<div class="c-search__wrap">
+										<div class="c-search__top">
+											<a href="#" class="c-search__link">Объекты. Найдено 797. Показать все </a>
+										</div>
+										<div class="c-search__wrapper">
+											<a href="#" class="c-search__item">
+												<picture class="c-search__img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<div class="c-search__body">
+													<span class="c-search__name">Дом в классическом стиле</span>
+													<span class="c-search__help">429 500 000 RUB </span>
+												</div>
+											</a>
+											<a href="#" class="c-search__item">
+												<picture class="c-search__img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<div class="c-search__body">
+													<span class="c-search__name">Дом в классическом стиле</span>
+													<span class="c-search__help">429 500 000 RUB </span>
+												</div>
+											</a>
+											<a href="#" class="c-search__item">
+												<picture class="c-search__img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<div class="c-search__body">
+													<span class="c-search__name">Дом в классическом стиле</span>
+													<span class="c-search__help">429 500 000 RUB </span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="c-search__wrap">
+										<div class="c-search__top">
+											<a href="#" class="c-search__link">КП/ЖК. Найдено 254. Показать все</a>
+										</div>
+										<div class="c-search__wrapper">
+											<a href="#" class="c-search__item">
+												<picture class="c-search__img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<div class="c-search__body">
+													<span class="c-search__name">Резиденция Бенилюкс</span>
+												</div>
+											</a>
+											<a href="#" class="c-search__item">
+												<picture class="c-search__img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<div class="c-search__body">
+													<span class="c-search__name">Резиденция Бенилюкс</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="c-user header__user">
 							<a href="#" class="c-user__img">
