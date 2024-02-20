@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BURO ESTATE & DEVELOPMENT - CRM</title>
+	<meta property="og:title" content="BURO ESTATE & DEVELOPMENT - CRM">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="BURO ESTATE & DEVELOPMENT - CRM">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- apanel -->
+	<div class="apanel" id="apanel">
+		<!-- sidebar -->
+		<div class="sidebar apanel__sidebar" id="sidebar">
+			<div class="sidebar__top">
+				<a href="index.html" class="sidebar__logotype">
+					<img src="img/logotype-white.svg" width="85" height="38" alt="BURO ESTATE & DEVELOPMENT">
+				</a>
+				<button class="sidebar__hamburger">
+					<span class="sidebar__hamburger-inner"></span>
+					<span class="sidebar__hamburger-inner"></span>
+					<span class="sidebar__hamburger-inner"></span>
+				</button>
+				<button class="sidebar__trigger" aria-label="Закрыть">
+					<span class="sidebar__trigger-inner"></span>
+					<span class="sidebar__trigger-inner"></span>
+				</button>
+			</div>
+			<div class="sidebar__main">
+				<nav class="sidebar-nav sidebar__nav">
+					<ul class="sidebar-nav__list">
+						<li class="sidebar-nav__item">
+							<div class="sidebar-nav__elem">
+								<a href="notifications.html" class="sidebar-nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-notification"></use>
+									</svg>
+									<span>Уведомления</span>
+									<span>2</span>
+								</a>
+							</div>
+						</li>
+						<li class="sidebar-nav__item">
+							<div class="sidebar-nav__elem is--open">
+								<a href="#" class="sidebar-nav__link sidebar-nav__link--trigger">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-zagorod"></use>
+									</svg>
+									<span>Загород</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-more"></use>
+									</svg>
+								</a>
+								<ul class="sidebar-nav__sublist">
+									<li class="sidebar-nav__subitem">
+										<a href="villages.html" class="sidebar-nav__link is--active">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-village"></use>
+											</svg>
+											<span>Поселки и ЖК</span>
+										</a>
+									</li>
+									<li class="sidebar-nav__subitem">
+										<a href="#" class="sidebar-nav__link ">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-basket"></use>
+											</svg>
+											<span>Продажа</span>
+										</a>
+									</li>
+									<li class="sidebar-nav__subitem">
+										<a href="#" class="sidebar-nav__link ">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-time"></use>
+											</svg>
+											<span>Аренда</span>
+										</a>
+									</li>
+									<li class="sidebar-nav__subitem">
+										<a href="new-objects.html" class="sidebar-nav__link ">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-object"></use>
+											</svg>
+											<span>Новые объекты</span>
+										</a>
+									</li>
+									<li class="sidebar-nav__subitem">
+										<a href="unloading.html" class="sidebar-nav__link ">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-unloading"></use>
+											</svg>
+											<span>Выгрузки</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- end of sidebar -->
+		<div class="apanel__main">
+			<!-- header -->
+			<header class="header" id="header">
+				<div class="header__wrapper">
+					<div class="header__inner">
+						<button class="hamburger" id="sidebar-trigger" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+						<h1 class="header__heading">Жуковка</h1>
+					</div>
+					<div class="header__inner">
+						<div class="c-search">
+							<a href="search.html" class="c-search__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-search"></use>
+								</svg>
+							</a>
+							<form action="#" class="c-search__inner">
+								<svg class="c-search__icon">
+									<use xlink:href="img/sprite.svg#icon-search"></use>
+								</svg>
+								<input type="text" class="c-search__input" placeholder="Поиск">
+								<button class="c-search__close">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+						<div class="c-user header__user">
+							<a href="#" class="c-user__img">
+								<img src="img/ava.jpg" alt="Image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- end of header -->
+			<div class="apanel__content tabs">
+				<div class="apanel__top">
+					<ul class="tabs__list apanel__tabs">
+						<li class="tabs__item is--active">
+							<button class="tabs__tab">Объекты</button>
+						</li>
+						<li class="tabs__item">
+							<button class="tabs__tab">Информация</button>
+						</li>
+						<li class="tabs__item">
+							<button class="tabs__tab">Описание и фото</button>
+						</li>
+					</ul>
+					<button class="apanel__trigger modal-btn" data-id="change-history">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-time"></use>
+						</svg>
+						<span>История</span>
+					</button>
+				</div>
+				<div class="tabs__wrapper is--active">
+					<div class="atables">
+						<div class="atables__table-wrap">
+							<table class="atables__table">
+								<thead class="atables__thead">
+									<tr class="atables__tr">
+										<td class="atables__td" style="--desktop-width: 100px; --mobile-width: 50px;">
+											<!-- add class 'is--desc' for reverse -->
+											<button class="atables__sort">ID</button>
+										</td>
+										<td class="atables__td" style="--desktop-width: 195px; --mobile-width: 190px;">Изображение</td>
+										<td class="atables__td" style="--desktop-width: 120px; --mobile-width: 180px;">Направление</td>
+										<td class="atables__td" style="--desktop-width: 100px; --mobile-width: 180px;">КП/ЖК</td>
+										<td class="atables__td" style="--desktop-width: 90px; --mobile-width: 125px;">
+											<!-- add class 'is--desc' for reverse -->
+											<button class="atables__sort">№ объекта</button>
+										</td>
+										<td class="atables__td" style="--desktop-width: 70px; --mobile-width: 125px;">
+											<!-- add class 'is--desc' for reverse -->
+											<button class="atables__sort">Тип</button>
+										</td>
+										<td class="atables__td" style="--desktop-width: 100px; --mobile-width: 140px;">
+											<!-- add class 'is--desc' for reverse -->
+											<button class="atables__sort">Площ. дома</button>
+										</td>
+										<td class="atables__td" style="--desktop-width: 114px; --mobile-width: 156px;">
+											<!-- add class 'is--desc' for reverse -->
+											<button class="atables__sort">Площ. участка</button>
+										</td>
+										<td class="atables__td" style="--desktop-width: 74px; --mobile-width: 125px;">
+											<!-- add class 'is--desc' for reverse -->
+											<button class="atables__sort">Стоимость</button>
+										</td>
+										<td class="atables__td" style="--desktop-width: 70px; --mobile-width: 125px;">
+											<!-- add class 'is--desc' for reverse -->
+											<button class="atables__sort">Валюта</button>
+										</td>
+										<td class="atables__td" style="--desktop-width: 95px; --mobile-width: 80px;">Обновлено</td>
+									</tr>
+								</thead>
+								<tbody class="atables__tbody">
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">1755</td>
+										<td class="atables__td">
+											<a href="#" class="atables__object">
+												<picture class="atables__object-img">
+													<img src="img/objects-01.jpg" alt="Image">
+												</picture>
+												<svg class="atables__object-icon">
+													<use xlink:href="img/sprite.svg#icon-more-object"></use>
+												</svg>
+											</a>
+										</td>
+										<td class="atables__td">Новорижское </td>
+										<td class="atables__td">Резиденция <br>Бенилкс</td>
+										<td class="atables__td">11234</td>
+										<td class="atables__td">Дом</td>
+										<td class="atables__td">39</td>
+										<td class="atables__td">750</td>
+										<td class="atables__td">3 300 000</td>
+										<td class="atables__td">$</td>
+										<td class="atables__td">12.11.2023</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="atables__bottom">
+							<a href="#" class="atables__more btn btn--sm btn--border">Показать еще</a>
+							<div class="pagination atables__pagination">
+								<ul class="pagination__list">
+									<li class="pagination__item is--active">
+										<a href="#" class="pagination__btn">1</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">2</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">3</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">4</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn" disabled>...</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">58</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tabs__wrapper">
+					<div class="information">
+						<div class="information__wrap">
+							<div class="information__wrapper">
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Название</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" id="object-date-01" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">ID</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Населенный пункт</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Направление</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Удаленность от МКАД</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Район</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Количество объектов</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Минимальная стоимость</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Максимальная стоимость</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Куратор</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Год сдачи</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="Значение">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tabs__wrapper">
+					<div class="photos-slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-01.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-02.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-03.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-04.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-01.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-03.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-02.jpg" alt="Iamge">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture class="photos-slider__img">
+										<img src="img/photos-slider-04.jpg" alt="Iamge">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<button class="swiper-button-next" aria-label="Далее">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+							</svg>
+						</button>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="information">
+						<div class="information__wrap information__wrap--wide">
+							<div class="information__wrapper">
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Загрузить фото</span>
+									</div>
+									<div class="information__right">
+										<div class="information__photos">
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-01" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-01" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+													<button class="photo-upload__delete">
+														<svg class="photo-upload__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-02" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-02" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+													<button class="photo-upload__delete">
+														<svg class="photo-upload__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-03" class="photo-upload__label is--hidden">
+													<input type="file" id="photo-upload-03" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded">
+													<picture class="photo-upload__img">
+														<img src="img/objects-01.jpg" alt="Image">
+													</picture>
+													<button class="photo-upload__delete">
+														<svg class="photo-upload__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="photo-upload information__photo">
+												<label for="photo-upload-0" class="photo-upload__label">
+													<input type="file" id="photo-upload-04" class="photo-upload__input">
+													<svg class="photo-upload__icon">
+														<use xlink:href="img/sprite.svg#icon-add"></use>
+													</svg>
+												</label>
+												<div class="photo-upload__uploaded is--hidden">
+													<picture class="photo-upload__img">
+														<!-- <img src="img/objects-01.jpg" alt="Image"> -->
+													</picture>
+													<button class="photo-upload__delete">
+														<svg class="photo-upload__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Описание</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<textarea id="object-cokol" class="input-field__textarea" placeholder="">Коттеджный посёлок «Резиденции Бенилюкс» – посёлок премиум-класса, в котором сочетаются европейский комфорт и уютная атмосфера родной русской природы.</textarea>
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Дополнительно</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<textarea id="object-cokol" class="input-field__textarea" placeholder=""></textarea>
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information__left">
+										<span class="information__label">Инфрастуктура</span>
+									</div>
+									<div class="information__right">
+										<div class="input-field information__input">
+											<div class="input-field__inner">
+												<input type="text" class="input-field__input" placeholder="">
+											</div>
+											<span class="input-field__error">Данные введены неверно</span>
+										</div>
+									</div>
+								</div>
+								<div class="information__item information__item--start">
+									<div class="information__left">
+										<span class="information__label">Документы</span>
+									</div>
+									<div class="information__right">
+										<div class="documents information__documents">
+											<div class="documents__wrapper">
+												<div class="documents__item">
+													<div class="documents__item-inner">
+														<picture class="documents__img">
+															<img src="img/icon-pdf.svg" alt="Icon">
+														</picture>
+														<div class="documents__body">
+															<span class="documents__name">Отчет 12. 23</span>
+															<span class="documents__help">9.48МБ</span>
+														</div>
+													</div>
+													<a href="#" class="documents__trigger" download>
+														<span>Скачать</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-download"></use>
+														</svg>
+													</a>
+												</div>
+												<div class="documents__item">
+													<div class="documents__item-inner">
+														<picture class="documents__img">
+															<img src="img/icon-word.svg" alt="Icon">
+														</picture>
+														<div class="documents__body">
+															<span class="documents__name">Отчет 12. 23</span>
+															<span class="documents__help">9.48МБ</span>
+														</div>
+													</div>
+													<a href="#" class="documents__trigger" download>
+														<span>Скачать</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-download"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of apanel -->
+	<!-- modals -->
+	<div class="modal" id="view-map">
+		<div class="modal__wrap modal__wrap--lg">
+			<div class="modal__wrapper">
+				<div class="modal__top">
+					<h3 class="modal__heading">Координаты на карте (GPS 55º47'51.53'N 37º1'42.61'E)</h3>
+					<button class="modal__close-btn modal__close">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__main">
+					<div class="modal__map" id="location-map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="change-history">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__top">
+					<h3 class="modal__heading">История изменений</h3>
+					<button class="modal__close-btn modal__close">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__main">
+					<div class="change-history">
+						<div class="change-history__search">
+							<svg class="change-history__search-icon">
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+							<input type="text" class="change-history__search-input" placeholder="Поиск">
+						</div>
+						<div class="change-history__wrapper">
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+									<span class="change-history__help">2 минуты назад</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
+									<span class="change-history__help">5 часов назад</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
+									<span class="change-history__help">Вчера в 22:50</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+									<span class="change-history__help">2 минуты назад</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
+									<span class="change-history__help">5 часов назад</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
+									<span class="change-history__help">Вчера в 22:50</span>
+								</div>
+							</div>
+							<div class="change-history__item">
+								<picture class="change-history__img">
+									<img src="img/ava.jpg" alt="Image">
+								</picture>
+								<div class="change-history__body">
+									<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+									<span class="change-history__help">2 минуты назад</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of modals -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

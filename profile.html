@@ -26,93 +26,96 @@
 <body>
 	<!-- apanel -->
 	<div class="apanel" id="apanel">
-		<div class="apanel__sidebar">
-			<!-- sidebar -->
-			<div class="sidebar @@class" id="sidebar">
-				<div class="sidebar__top">
-					<a href="index.html" class="sidebar__logotype">
-						<img src="img/logotype-white.svg" width="85" height="38" alt="BURO ESTATE & DEVELOPMENT">
-					</a>
-					<button class="sidebar__trigger" aria-label="Закрыть">
-						<span class="sidebar__trigger-inner"></span>
-						<span class="sidebar__trigger-inner"></span>
-					</button>
-				</div>
-				<div class="sidebar__main">
-					<nav class="sidebar-nav sidebar__nav">
-						<ul class="sidebar-nav__list">
-							<li class="sidebar-nav__item">
-								<div class="sidebar-nav__elem">
-									<a href="notifications.html" class="sidebar-nav__link">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-notification"></use>
-										</svg>
-										<span>Уведомления</span>
-										<span>2</span>
-									</a>
-								</div>
-							</li>
-							<li class="sidebar-nav__item">
-								<div class="sidebar-nav__elem ">
-									<a href="#" class="sidebar-nav__link sidebar-nav__link--trigger">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-zagorod"></use>
-										</svg>
-										<span>Загород</span>
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-more"></use>
-										</svg>
-									</a>
-									<ul class="sidebar-nav__sublist">
-										<li class="sidebar-nav__subitem">
-											<a href="#" class="sidebar-nav__link ">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-village"></use>
-												</svg>
-												<span>Поселки и ЖК</span>
-											</a>
-										</li>
-										<li class="sidebar-nav__subitem">
-											<a href="#" class="sidebar-nav__link ">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-basket"></use>
-												</svg>
-												<span>Продажа</span>
-											</a>
-										</li>
-										<li class="sidebar-nav__subitem">
-											<a href="#" class="sidebar-nav__link ">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-time"></use>
-												</svg>
-												<span>Аренда</span>
-											</a>
-										</li>
-										<li class="sidebar-nav__subitem">
-											<a href="new-objects.html" class="sidebar-nav__link ">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-object"></use>
-												</svg>
-												<span>Новые объекты</span>
-											</a>
-										</li>
-										<li class="sidebar-nav__subitem">
-											<a href="unloading.html" class="sidebar-nav__link ">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-unloading"></use>
-												</svg>
-												<span>Выгрузки</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</nav>
-				</div>
+		<!-- sidebar -->
+		<div class="sidebar apanel__sidebar" id="sidebar">
+			<div class="sidebar__top">
+				<a href="index.html" class="sidebar__logotype">
+					<img src="img/logotype-white.svg" width="85" height="38" alt="BURO ESTATE & DEVELOPMENT">
+				</a>
+				<button class="sidebar__hamburger">
+					<span class="sidebar__hamburger-inner"></span>
+					<span class="sidebar__hamburger-inner"></span>
+					<span class="sidebar__hamburger-inner"></span>
+				</button>
+				<button class="sidebar__trigger" aria-label="Закрыть">
+					<span class="sidebar__trigger-inner"></span>
+					<span class="sidebar__trigger-inner"></span>
+				</button>
 			</div>
-			<!-- end of sidebar -->
+			<div class="sidebar__main">
+				<nav class="sidebar-nav sidebar__nav">
+					<ul class="sidebar-nav__list">
+						<li class="sidebar-nav__item">
+							<div class="sidebar-nav__elem">
+								<a href="notifications.html" class="sidebar-nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-notification"></use>
+									</svg>
+									<span>Уведомления</span>
+									<span>2</span>
+								</a>
+							</div>
+						</li>
+						<li class="sidebar-nav__item">
+							<div class="sidebar-nav__elem is--open">
+								<a href="#" class="sidebar-nav__link sidebar-nav__link--trigger">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-zagorod"></use>
+									</svg>
+									<span>Загород</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-more"></use>
+									</svg>
+								</a>
+								<ul class="sidebar-nav__sublist">
+									<li class="sidebar-nav__subitem">
+										<a href="villages.html" class="sidebar-nav__link ">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-village"></use>
+											</svg>
+											<span>Поселки и ЖК</span>
+										</a>
+									</li>
+									<li class="sidebar-nav__subitem">
+										<a href="#" class="sidebar-nav__link ">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-basket"></use>
+											</svg>
+											<span>Продажа</span>
+										</a>
+									</li>
+									<li class="sidebar-nav__subitem">
+										<a href="#" class="sidebar-nav__link ">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-time"></use>
+											</svg>
+											<span>Аренда</span>
+										</a>
+									</li>
+									<li class="sidebar-nav__subitem">
+										<a href="new-objects.html" class="sidebar-nav__link ">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-object"></use>
+											</svg>
+											<span>Новые объекты</span>
+										</a>
+									</li>
+									<li class="sidebar-nav__subitem">
+										<a href="unloading.html" class="sidebar-nav__link ">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-unloading"></use>
+											</svg>
+											<span>Выгрузки</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
+		<!-- end of sidebar -->
 		<div class="apanel__main">
 			<!-- header -->
 			<header class="header" id="header">
@@ -132,6 +135,17 @@
 									<use xlink:href="img/sprite.svg#icon-search"></use>
 								</svg>
 							</a>
+							<form action="#" class="c-search__inner">
+								<svg class="c-search__icon">
+									<use xlink:href="img/sprite.svg#icon-search"></use>
+								</svg>
+								<input type="text" class="c-search__input" placeholder="Поиск">
+								<button class="c-search__close">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+									</svg>
+								</button>
+							</form>
 						</div>
 						<div class="c-user header__user">
 							<a href="#" class="c-user__img">
@@ -317,7 +331,260 @@
 						</div>
 					</div>
 				</div>
-				<div class="tabs__wrapper"></div>
+				<div class="tabs__wrapper">
+					<div class="atables">
+						<div class="atables__table-wrap">
+							<table class="atables__table">
+								<thead class="atables__thead">
+									<tr class="atables__tr">
+										<td class="atables__td">Сотрудник</td>
+										<td class="atables__td">Дата</td>
+										<td class="atables__td">Время</td>
+										<td class="atables__td">Геопозиция</td>
+										<td class="atables__td">Платформа</td>
+										<td class="atables__td">Браузер</td>
+										<td class="atables__td">Тип входа</td>
+									</tr>
+								</thead>
+								<tbody class="atables__tbody">
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+									<tr class="atables__tr">
+										<td class="atables__td">
+											<div class="c-user">
+												<picture class="c-user__img">
+													<img src="img/ava.jpg" alt="Image">
+												</picture>
+												<span class="c-user__name">Юлия Силивончик</span>
+											</div>
+										</td>
+										<td class="atables__td">17 ноября 2023</td>
+										<td class="atables__td">22:41</td>
+										<td class="atables__td">Москва</td>
+										<td class="atables__td">masOS</td>
+										<td class="atables__td">Chrome</td>
+										<td class="atables__td">по почте</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="atables__bottom">
+							<a href="#" class="atables__more btn btn--sm btn--border">Показать еще</a>
+							<div class="pagination atables__pagination">
+								<ul class="pagination__list">
+									<li class="pagination__item is--active">
+										<a href="#" class="pagination__btn">1</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">2</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">3</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">4</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn" disabled>...</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">58</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

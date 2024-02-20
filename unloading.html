@@ -32,6 +32,11 @@
 				<a href="index.html" class="sidebar__logotype">
 					<img src="img/logotype-white.svg" width="85" height="38" alt="BURO ESTATE & DEVELOPMENT">
 				</a>
+				<button class="sidebar__hamburger">
+					<span class="sidebar__hamburger-inner"></span>
+					<span class="sidebar__hamburger-inner"></span>
+					<span class="sidebar__hamburger-inner"></span>
+				</button>
 				<button class="sidebar__trigger" aria-label="Закрыть">
 					<span class="sidebar__trigger-inner"></span>
 					<span class="sidebar__trigger-inner"></span>
@@ -64,7 +69,7 @@
 								</a>
 								<ul class="sidebar-nav__sublist">
 									<li class="sidebar-nav__subitem">
-										<a href="#" class="sidebar-nav__link ">
+										<a href="villages.html" class="sidebar-nav__link ">
 											<svg>
 												<use xlink:href="img/sprite.svg#icon-village"></use>
 											</svg>
@@ -130,6 +135,17 @@
 									<use xlink:href="img/sprite.svg#icon-search"></use>
 								</svg>
 							</a>
+							<form action="#" class="c-search__inner">
+								<svg class="c-search__icon">
+									<use xlink:href="img/sprite.svg#icon-search"></use>
+								</svg>
+								<input type="text" class="c-search__input" placeholder="Поиск">
+								<button class="c-search__close">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+									</svg>
+								</button>
+							</form>
 						</div>
 						<div class="c-user header__user">
 							<a href="#" class="c-user__img">
@@ -140,10 +156,9 @@
 				</div>
 			</header>
 			<!-- end of header -->
-			<!-- atables -->
-			<div class="atables" id="atables">
-				<div class="tabs">
-					<ul class="tabs__list">
+			<div class="apanel__content tabs">
+				<div class="apanel__top">
+					<ul class="tabs__list apanel__tabs">
 						<li class="tabs__item is--active">
 							<button class="tabs__tab">Циан</button>
 						</li>
@@ -154,324 +169,1916 @@
 							<button class="tabs__tab">Яндекс</button>
 						</li>
 					</ul>
-					<div class="tabs__wrapper is--active">
-						<div class="atables__top">
-							<h2 class="atables__heading">Всего 432 объекта</h2>
-						</div>
-						<div class="atables__table-wrap">
-							<table class="atables__table">
-								<thead class="atables__thead">
-									<tr class="atables__tr">
-										<td class="atables__td">ID</td>
-										<td class="atables__td" style="width: 180px;">Изображение</td>
-										<td class="atables__td">КП/ЖК</td>
-										<td class="atables__td">Тип</td>
-										<td class="atables__td">Площ. дома</td>
-										<td class="atables__td">Площ. участка</td>
-										<td class="atables__td">Стоимость</td>
-										<td class="atables__td">Валюта</td>
-									</tr>
-								</thead>
-								<tbody class="atables__tbody">
-									<tr class="atables__tr">
-										<td class="atables__td">1755</td>
-										<td class="atables__td">
-											<a href="#" class="atables__object">
-												<picture class="atables__object-img">
-													<img src="img/objects-01.jpg" alt="Image">
-												</picture>
-												<svg class="atables__object-icon">
-													<use xlink:href="img/sprite.svg#icon-more-object"></use>
-												</svg>
-											</a>
-										</td>
-										<td class="atables__td">Лесные зори</td>
-										<td class="atables__td">Дом</td>
-										<td class="atables__td">200</td>
-										<td class="atables__td">300</td>
-										<td class="atables__td">10 000 000</td>
-										<td class="atables__td">₽</td>
-									</tr>
-									<tr class="atables__tr">
-										<td class="atables__td">1755</td>
-										<td class="atables__td">
-											<a href="#" class="atables__object">
-												<picture class="atables__object-img">
-													<img src="img/objects-01.jpg" alt="Image">
-												</picture>
-												<svg class="atables__object-icon">
-													<use xlink:href="img/sprite.svg#icon-more-object"></use>
-												</svg>
-											</a>
-										</td>
-										<td class="atables__td">Лесные зори</td>
-										<td class="atables__td">Дом</td>
-										<td class="atables__td">200</td>
-										<td class="atables__td">300</td>
-										<td class="atables__td">10 000 000</td>
-										<td class="atables__td">₽</td>
-									</tr>
-									<tr class="atables__tr">
-										<td class="atables__td">1755</td>
-										<td class="atables__td">
-											<a href="#" class="atables__object">
-												<picture class="atables__object-img">
-													<img src="img/objects-01.jpg" alt="Image">
-												</picture>
-												<svg class="atables__object-icon">
-													<use xlink:href="img/sprite.svg#icon-more-object"></use>
-												</svg>
-											</a>
-										</td>
-										<td class="atables__td">Лесные зори</td>
-										<td class="atables__td">Дом</td>
-										<td class="atables__td">200</td>
-										<td class="atables__td">300</td>
-										<td class="atables__td">10 000 000</td>
-										<td class="atables__td">₽</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="atables__bottom">
-							<a href="#" class="atables__more btn btn--sm btn--border">Показать еще</a>
-							<div class="pagination atables__pagination">
-								<ul class="pagination__list">
-									<li class="pagination__item is--active">
-										<a href="#" class="pagination__btn">1</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">2</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">3</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">4</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn" disabled>...</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">58</a>
-									</li>
-								</ul>
-							</div>
+				</div>
+				<div class="tabs__wrapper is--active">
+					<div class="atables__top">
+						<h2 class="atables__heading">Всего 432 объекта</h2>
+					</div>
+					<div class="atables__table-wrap">
+						<table class="atables__table">
+							<thead class="atables__thead">
+								<tr class="atables__tr">
+									<td class="atables__td" style="--desktop-width: 100px; --mobile-width: 98px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">ID</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 235px; --mobile-width: 190px;">Изображение</td>
+									<td class="atables__td" style="--desktop-width: 175px; --mobile-width: 180px;">КП/ЖК</td>
+									<td class="atables__td" style="--desktop-width: 170px; --mobile-width: 125px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Тип</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 140px; --mobile-width: 140px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Площ. дома</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 134px; --mobile-width: 156px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Площ. участка</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 160px; --mobile-width: 136px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Стоимость</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 100px; --mobile-width: 80px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Валюта</button>
+									</td>
+								</tr>
+							</thead>
+							<tbody class="atables__tbody">
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="atables__bottom">
+						<a href="#" class="atables__more btn btn--sm btn--border">Показать еще</a>
+						<div class="pagination atables__pagination">
+							<ul class="pagination__list">
+								<li class="pagination__item is--active">
+									<a href="#" class="pagination__btn">1</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">2</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">3</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">4</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn" disabled>...</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">58</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="tabs__wrapper">
-						<div class="atables__top">
-							<h2 class="atables__heading">Всего 400 объектов</h2>
-						</div>
-						<div class="atables__table-wrap">
-							<table class="atables__table">
-								<thead class="atables__thead">
-									<tr class="atables__tr">
-										<td class="atables__td">ID</td>
-										<td class="atables__td" style="width: 180px;">Изображение</td>
-										<td class="atables__td">КП/ЖК</td>
-										<td class="atables__td">Тип</td>
-										<td class="atables__td">Площ. дома</td>
-										<td class="atables__td">Площ. участка</td>
-										<td class="atables__td">Стоимость</td>
-										<td class="atables__td">Валюта</td>
-									</tr>
-								</thead>
-								<tbody class="atables__tbody">
-									<tr class="atables__tr">
-										<td class="atables__td">1755</td>
-										<td class="atables__td">
-											<a href="#" class="atables__object">
-												<picture class="atables__object-img">
-													<img src="img/objects-01.jpg" alt="Image">
-												</picture>
-												<svg class="atables__object-icon">
-													<use xlink:href="img/sprite.svg#icon-more-object"></use>
-												</svg>
-											</a>
-										</td>
-										<td class="atables__td">Лесные зори</td>
-										<td class="atables__td">Дом</td>
-										<td class="atables__td">200</td>
-										<td class="atables__td">300</td>
-										<td class="atables__td">10 000 000</td>
-										<td class="atables__td">₽</td>
-									</tr>
-									<tr class="atables__tr">
-										<td class="atables__td">1755</td>
-										<td class="atables__td">
-											<a href="#" class="atables__object">
-												<picture class="atables__object-img">
-													<img src="img/objects-01.jpg" alt="Image">
-												</picture>
-												<svg class="atables__object-icon">
-													<use xlink:href="img/sprite.svg#icon-more-object"></use>
-												</svg>
-											</a>
-										</td>
-										<td class="atables__td">Лесные зори</td>
-										<td class="atables__td">Дом</td>
-										<td class="atables__td">200</td>
-										<td class="atables__td">300</td>
-										<td class="atables__td">10 000 000</td>
-										<td class="atables__td">₽</td>
-									</tr>
-									<tr class="atables__tr">
-										<td class="atables__td">1755</td>
-										<td class="atables__td">
-											<a href="#" class="atables__object">
-												<picture class="atables__object-img">
-													<img src="img/objects-01.jpg" alt="Image">
-												</picture>
-												<svg class="atables__object-icon">
-													<use xlink:href="img/sprite.svg#icon-more-object"></use>
-												</svg>
-											</a>
-										</td>
-										<td class="atables__td">Лесные зори</td>
-										<td class="atables__td">Дом</td>
-										<td class="atables__td">200</td>
-										<td class="atables__td">300</td>
-										<td class="atables__td">10 000 000</td>
-										<td class="atables__td">₽</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="atables__bottom">
-							<a href="#" class="atables__more btn btn--sm btn--border">Показать еще</a>
-							<div class="pagination atables__pagination">
-								<ul class="pagination__list">
-									<li class="pagination__item is--active">
-										<a href="#" class="pagination__btn">1</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">2</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">3</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">4</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn" disabled>...</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">58</a>
-									</li>
-								</ul>
-							</div>
+				</div>
+				<div class="tabs__wrapper">
+					<div class="atables__top">
+						<h2 class="atables__heading">Всего 400 объектов</h2>
+					</div>
+					<div class="atables__table-wrap">
+						<table class="atables__table">
+							<thead class="atables__thead">
+								<tr class="atables__tr">
+									<td class="atables__td" style="--desktop-width: 100px; --mobile-width: 98px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">ID</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 235px; --mobile-width: 190px;">Изображение</td>
+									<td class="atables__td" style="--desktop-width: 175px; --mobile-width: 180px;">КП/ЖК</td>
+									<td class="atables__td" style="--desktop-width: 170px; --mobile-width: 125px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Тип</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 140px; --mobile-width: 140px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Площ. дома</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 134px; --mobile-width: 156px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Площ. участка</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 160px; --mobile-width: 136px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Стоимость</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 100px; --mobile-width: 80px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Валюта</button>
+									</td>
+								</tr>
+							</thead>
+							<tbody class="atables__tbody">
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="atables__bottom">
+						<a href="#" class="atables__more btn btn--sm btn--border">Показать еще</a>
+						<div class="pagination atables__pagination">
+							<ul class="pagination__list">
+								<li class="pagination__item is--active">
+									<a href="#" class="pagination__btn">1</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">2</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">3</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">4</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn" disabled>...</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">58</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="tabs__wrapper">
-						<div class="atables__top">
-							<h2 class="atables__heading">Всего 32 объекта</h2>
-						</div>
-						<div class="atables__table-wrap">
-							<table class="atables__table">
-								<thead class="atables__thead">
-									<tr class="atables__tr">
-										<td class="atables__td">ID</td>
-										<td class="atables__td" style="width: 180px;">Изображение</td>
-										<td class="atables__td">КП/ЖК</td>
-										<td class="atables__td">Тип</td>
-										<td class="atables__td">Площ. дома</td>
-										<td class="atables__td">Площ. участка</td>
-										<td class="atables__td">Стоимость</td>
-										<td class="atables__td">Валюта</td>
-									</tr>
-								</thead>
-								<tbody class="atables__tbody">
-									<tr class="atables__tr">
-										<td class="atables__td">1755</td>
-										<td class="atables__td">
-											<a href="#" class="atables__object">
-												<picture class="atables__object-img">
-													<img src="img/objects-01.jpg" alt="Image">
-												</picture>
-												<svg class="atables__object-icon">
-													<use xlink:href="img/sprite.svg#icon-more-object"></use>
-												</svg>
-											</a>
-										</td>
-										<td class="atables__td">Лесные зори</td>
-										<td class="atables__td">Дом</td>
-										<td class="atables__td">200</td>
-										<td class="atables__td">300</td>
-										<td class="atables__td">10 000 000</td>
-										<td class="atables__td">₽</td>
-									</tr>
-									<tr class="atables__tr">
-										<td class="atables__td">1755</td>
-										<td class="atables__td">
-											<a href="#" class="atables__object">
-												<picture class="atables__object-img">
-													<img src="img/objects-01.jpg" alt="Image">
-												</picture>
-												<svg class="atables__object-icon">
-													<use xlink:href="img/sprite.svg#icon-more-object"></use>
-												</svg>
-											</a>
-										</td>
-										<td class="atables__td">Лесные зори</td>
-										<td class="atables__td">Дом</td>
-										<td class="atables__td">200</td>
-										<td class="atables__td">300</td>
-										<td class="atables__td">10 000 000</td>
-										<td class="atables__td">₽</td>
-									</tr>
-									<tr class="atables__tr">
-										<td class="atables__td">1755</td>
-										<td class="atables__td">
-											<a href="#" class="atables__object">
-												<picture class="atables__object-img">
-													<img src="img/objects-01.jpg" alt="Image">
-												</picture>
-												<svg class="atables__object-icon">
-													<use xlink:href="img/sprite.svg#icon-more-object"></use>
-												</svg>
-											</a>
-										</td>
-										<td class="atables__td">Лесные зори</td>
-										<td class="atables__td">Дом</td>
-										<td class="atables__td">200</td>
-										<td class="atables__td">300</td>
-										<td class="atables__td">10 000 000</td>
-										<td class="atables__td">₽</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="atables__bottom">
-							<a href="#" class="atables__more btn btn--sm btn--border">Показать еще</a>
-							<div class="pagination atables__pagination">
-								<ul class="pagination__list">
-									<li class="pagination__item is--active">
-										<a href="#" class="pagination__btn">1</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">2</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">3</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">4</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn" disabled>...</a>
-									</li>
-									<li class="pagination__item">
-										<a href="#" class="pagination__btn">58</a>
-									</li>
-								</ul>
-							</div>
+				</div>
+				<div class="tabs__wrapper">
+					<div class="atables__top">
+						<h2 class="atables__heading">Всего 32 объекта</h2>
+					</div>
+					<div class="atables__table-wrap">
+						<table class="atables__table">
+							<thead class="atables__thead">
+								<tr class="atables__tr">
+									<td class="atables__td" style="--desktop-width: 100px; --mobile-width: 98px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">ID</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 235px; --mobile-width: 190px;">Изображение</td>
+									<td class="atables__td" style="--desktop-width: 175px; --mobile-width: 180px;">КП/ЖК</td>
+									<td class="atables__td" style="--desktop-width: 170px; --mobile-width: 125px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Тип</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 140px; --mobile-width: 140px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Площ. дома</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 134px; --mobile-width: 156px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Площ. участка</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 160px; --mobile-width: 136px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Стоимость</button>
+									</td>
+									<td class="atables__td" style="--desktop-width: 100px; --mobile-width: 80px;">
+										<!-- add class 'is--desc' for reverse -->
+										<button class="atables__sort">Валюта</button>
+									</td>
+								</tr>
+							</thead>
+							<tbody class="atables__tbody">
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+								<tr class="atables__tr">
+									<td class="atables__td">1755</td>
+									<td class="atables__td">
+										<a href="#" class="atables__object">
+											<picture class="atables__object-img">
+												<img src="img/objects-01.jpg" alt="Image">
+											</picture>
+											<svg class="atables__object-icon">
+												<use xlink:href="img/sprite.svg#icon-more-object"></use>
+											</svg>
+										</a>
+									</td>
+									<td class="atables__td">Лесные зори</td>
+									<td class="atables__td">Дом</td>
+									<td class="atables__td">200</td>
+									<td class="atables__td">300</td>
+									<td class="atables__td">10 000 000</td>
+									<td class="atables__td">₽</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="atables__bottom">
+						<a href="#" class="atables__more btn btn--sm btn--border">Показать еще</a>
+						<div class="pagination atables__pagination">
+							<ul class="pagination__list">
+								<li class="pagination__item is--active">
+									<a href="#" class="pagination__btn">1</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">2</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">3</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">4</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn" disabled>...</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__btn">58</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- end of atables -->
 		</div>
 	</div>
 	<!-- end of apanel -->
