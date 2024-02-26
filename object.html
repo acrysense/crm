@@ -47,7 +47,7 @@
 					<ul class="sidebar-nav__list">
 						<li class="sidebar-nav__item">
 							<div class="sidebar-nav__elem">
-								<a href="notifications.html" class="sidebar-nav__link">
+								<a href="notifications.html" class="sidebar-nav__link ">
 									<svg>
 										<use xlink:href="img/sprite.svg#icon-notification"></use>
 									</svg>
@@ -77,7 +77,7 @@
 										</a>
 									</li>
 									<li class="sidebar-nav__subitem">
-										<a href="#" class="sidebar-nav__link ">
+										<a href="sell.html" class="sidebar-nav__link is--active">
 											<svg>
 												<use xlink:href="img/sprite.svg#icon-basket"></use>
 											</svg>
@@ -209,8 +209,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="c-user header__user">
-							<a href="#" class="c-user__img">
+						<div class="c-profile header__profile">
+							<a href="#" class="c-profile__img">
 								<img src="img/ava.jpg" alt="Image">
 							</a>
 						</div>
@@ -1520,77 +1520,126 @@
 					</div>
 				</div>
 				<div class="tabs__wrapper">
-					<div class="chat">
-						<div class="chat__wrapper">
-							<div class="chat-card chat__item">
-								<picture class="chat-card__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="chat-card__body">
-									<div class="chat-card__top">
-										<span class="chat-card__name">Марина Погоржельская</span>
-										<span class="chat-card__help">01.11.2023 в 13:44</span>
-									</div>
-									<div class="chat-card__main">
-										<p class="chat-card__description">Дверь плохо открывается</p>
-									</div>
-								</div>
+					<div class="comments">
+						<div class="comments__wrap">
+							<div class="comments__top">
+								<h2 class="comments__heading">Преимущества</h2>
 							</div>
-							<div class="chat-card chat__item">
-								<picture class="chat-card__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="chat-card__body">
-									<div class="chat-card__top">
-										<span class="chat-card__name">Кирилл Ивановский</span>
-										<span class="chat-card__help">01.11.2023 в 13:44</span>
+							<div class="comments__main">
+								<div class="input-field comments__input">
+									<span class="input-field__label">01.11.2023 в 13:44</span>
+									<div class="input-field__inner">
+										<textarea id="object-cokol" class="input-field__textarea" placeholder="">
+Удобное расположение и отличная цена 
+
+Сочетаются европейский комфорт и уютная атмосфера родной русской природы
+                                        </textarea>
 									</div>
-									<div class="chat-card__main">
-										<p class="chat-card__description">
-											Спасибо что учили мой комментарий!<br>
-											Кстати, буквально на днях мы были объекте по другому вопросу и увидели, что въезд уже полностью очищен от строительного мусора, так что можно смело ездить на просмотры.
-										</p>
-									</div>
+									<span class="input-field__error">Данные введены неверно</span>
 								</div>
-							</div>
-							<div class="chat-card chat__item">
-								<picture class="chat-card__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="chat-card__body">
-									<div class="chat-card__top">
-										<span class="chat-card__name">Ксения Павленко</span>
-										<span class="chat-card__help">30.10.2023 в 10:00</span>
-									</div>
-									<div class="chat-card__main">
-										<p class="chat-card__description">Передайте что показ можно осуществлять 24/7</p>
-									</div>
-								</div>
-							</div>
-							<div class="chat-card chat-card--author chat__item">
-								<picture class="chat-card__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="chat-card__body">
-									<div class="chat-card__top">
-										<span class="chat-card__name">Иван Иванов</span>
-										<span class="chat-card__help">Только что</span>
-									</div>
-									<div class="chat-card__main">
-										<p class="chat-card__description">Насколько я помню, там поменялось время для показов</p>
-									</div>
-								</div>
+								<button class="comments__btn btn" disabled>Сохранить</button>
 							</div>
 						</div>
-						<div class="chat__controls">
-							<div class="input-field chat__input">
-								<div class="input-field__inner">
-									<input type="text" id="object-chat" class="input-field__input" placeholder="Введите комментарий">
-								</div>
+						<div class="comments__wrap">
+							<div class="comments__top">
+								<h2 class="comments__heading">Особенности</h2>
 							</div>
-							<button class="chat__btn btn" disabled>Отправить</button>
+							<div class="comments__main">
+								<div class="input-field comments__input">
+									<div class="input-field__inner">
+										<textarea id="object-cokol" class="input-field__textarea" placeholder="Описание особенностей"></textarea>
+									</div>
+									<span class="input-field__error">Данные введены неверно</span>
+								</div>
+								<button class="comments__btn btn" disabled>Сохранить</button>
+							</div>
+						</div>
+						<div class="comments__wrap">
+							<div class="comments__top">
+								<h2 class="comments__heading">Информация о показе</h2>
+							</div>
+							<div class="comments__main">
+								<div class="input-field comments__input">
+									<div class="input-field__inner">
+										<textarea id="object-cokol" class="input-field__textarea" placeholder="Описание информации о показе"></textarea>
+									</div>
+									<span class="input-field__error">Данные введены неверно</span>
+								</div>
+								<button class="comments__btn btn" disabled>Сохранить</button>
+							</div>
 						</div>
 					</div>
+					<!-- <div class="chat">
+                        <div class="chat__wrapper">
+                            <div class="chat-card chat__item">
+                                <picture class="chat-card__img">
+                                    <img src="img/ava.jpg" alt="Image">
+                                </picture>
+                                <div class="chat-card__body">
+                                    <div class="chat-card__top">
+                                        <span class="chat-card__name">Марина Погоржельская</span>
+                                        <span class="chat-card__help">01.11.2023 в 13:44</span>
+                                    </div>
+                                    <div class="chat-card__main">
+                                        <p class="chat-card__description">Дверь плохо открывается</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-card chat__item">
+                                <picture class="chat-card__img">
+                                    <img src="img/ava.jpg" alt="Image">
+                                </picture>
+                                <div class="chat-card__body">
+                                    <div class="chat-card__top">
+                                        <span class="chat-card__name">Кирилл Ивановский</span>
+                                        <span class="chat-card__help">01.11.2023 в 13:44</span>
+                                    </div>
+                                    <div class="chat-card__main">
+                                        <p class="chat-card__description">
+                                            Спасибо что учили мой комментарий!<br>
+                                            Кстати, буквально на днях мы были объекте по другому вопросу и увидели, что въезд уже полностью очищен от строительного мусора, так что можно смело ездить на просмотры.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-card chat__item">
+                                <picture class="chat-card__img">
+                                    <img src="img/ava.jpg" alt="Image">
+                                </picture>
+                                <div class="chat-card__body">
+                                    <div class="chat-card__top">
+                                        <span class="chat-card__name">Ксения Павленко</span>
+                                        <span class="chat-card__help">30.10.2023 в 10:00</span>
+                                    </div>
+                                    <div class="chat-card__main">
+                                        <p class="chat-card__description">Передайте что показ можно осуществлять 24/7</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-card chat-card--author chat__item">
+                                <picture class="chat-card__img">
+                                    <img src="img/ava.jpg" alt="Image">
+                                </picture>
+                                <div class="chat-card__body">
+                                    <div class="chat-card__top">
+                                        <span class="chat-card__name">Иван Иванов</span>
+                                        <span class="chat-card__help">Только что</span>
+                                    </div>
+                                    <div class="chat-card__main">
+                                        <p class="chat-card__description">Насколько я помню, там поменялось время для показов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat__controls">
+                            <div class="input-field chat__input">
+                                <div class="input-field__inner">
+                                    <input type="text" id="object-chat" class="input-field__input"  placeholder="Введите комментарий">
+                                </div>
+                            </div>
+                            <button class="chat__btn btn" disabled>Отправить</button>
+                        </div>
+                    </div> -->
 				</div>
 				<div class="tabs__wrapper">
 					<div class="information">
@@ -1730,76 +1779,163 @@
 						</svg>
 					</button>
 				</div>
-				<div class="modal__main">
-					<div class="change-history">
-						<div class="change-history__search">
-							<svg class="change-history__search-icon">
-								<use xlink:href="img/sprite.svg#icon-search"></use>
-							</svg>
-							<input type="text" class="change-history__search-input" placeholder="Поиск">
+				<div class="modal__scroll">
+					<div class="modal__main">
+						<div class="change-history">
+							<div class="change-history__search">
+								<svg class="change-history__search-icon">
+									<use xlink:href="img/sprite.svg#icon-search"></use>
+								</svg>
+								<input type="text" class="change-history__search-input" placeholder="Поиск">
+							</div>
+							<div class="change-history__wrapper">
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+										<span class="change-history__help">2 минуты назад</span>
+									</div>
+								</div>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
+										<span class="change-history__help">5 часов назад</span>
+									</div>
+								</div>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
+										<span class="change-history__help">Вчера в 22:50</span>
+									</div>
+								</div>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+										<span class="change-history__help">2 минуты назад</span>
+									</div>
+								</div>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
+										<span class="change-history__help">5 часов назад</span>
+									</div>
+								</div>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
+										<span class="change-history__help">Вчера в 22:50</span>
+									</div>
+								</div>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+										<span class="change-history__help">2 минуты назад</span>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="change-history__wrapper">
-							<div class="change-history__item">
-								<picture class="change-history__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="change-history__body">
-									<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
-									<span class="change-history__help">2 минуты назад</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="change-history-objects">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__top">
+					<h3 class="modal__heading">История изменений</h3>
+					<button class="modal__close-btn modal__close">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__scroll">
+					<div class="modal__main">
+						<div class="change-history">
+							<div class="change-history__wrapper">
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+										<span class="change-history__help">2 минуты назад</span>
+									</div>
 								</div>
-							</div>
-							<div class="change-history__item">
-								<picture class="change-history__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="change-history__body">
-									<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
-									<span class="change-history__help">5 часов назад</span>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
+										<span class="change-history__help">5 часов назад</span>
+									</div>
 								</div>
-							</div>
-							<div class="change-history__item">
-								<picture class="change-history__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="change-history__body">
-									<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
-									<span class="change-history__help">Вчера в 22:50</span>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
+										<span class="change-history__help">Вчера в 22:50</span>
+									</div>
 								</div>
-							</div>
-							<div class="change-history__item">
-								<picture class="change-history__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="change-history__body">
-									<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
-									<span class="change-history__help">2 минуты назад</span>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+										<span class="change-history__help">2 минуты назад</span>
+									</div>
 								</div>
-							</div>
-							<div class="change-history__item">
-								<picture class="change-history__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="change-history__body">
-									<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
-									<span class="change-history__help">5 часов назад</span>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Иван Иванов удалил файл из раздела “Описание и фото”</span>
+										<span class="change-history__help">5 часов назад</span>
+									</div>
 								</div>
-							</div>
-							<div class="change-history__item">
-								<picture class="change-history__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="change-history__body">
-									<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
-									<span class="change-history__help">Вчера в 22:50</span>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Ксения Павленко создала новый объект <a href="#">“Резиденция Бенилюкс”</a></span>
+										<span class="change-history__help">Вчера в 22:50</span>
+									</div>
 								</div>
-							</div>
-							<div class="change-history__item">
-								<picture class="change-history__img">
-									<img src="img/ava.jpg" alt="Image">
-								</picture>
-								<div class="change-history__body">
-									<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
-									<span class="change-history__help">2 минуты назад</span>
+								<div class="change-history__item">
+									<picture class="change-history__img">
+										<img src="img/ava.jpg" alt="Image">
+									</picture>
+									<div class="change-history__body">
+										<span class="change-history__title">Юлия Силивончик изменила поле “Информация” </span>
+										<span class="change-history__help">2 минуты назад</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1819,292 +1955,294 @@
 						</svg>
 					</button>
 				</div>
-				<div class="modal__main">
-					<div class="modal-form">
-						<div class="modal-form__inner modal-form__inner--bottom">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Статус недвижимости</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
-								</div>
-							</div>
-							<div class="modal-form__item">
-								<div class="modal-form__checkboxes">
-									<div class="square-checkbox modal-form__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-modal-1-01">
-										<label for="filter-modal-1-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Эксклюзив</span>
-										</label>
-									</div>
-									<div class="square-checkbox modal-form__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-modal-1-02">
-										<label for="filter-modal-1-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Закрытые продажи</span>
-										</label>
+				<div class="modal__scroll">
+					<div class="modal__main">
+						<div class="modal-form">
+							<div class="modal-form__inner modal-form__inner--bottom">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Статус недвижимости</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Направление</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Удаленность от МКАД (км)</span>
-								<div class="input-field modal-form__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="text" class="input-field__input" placeholder="">
-											</div>
-											<span class="input-field__error">Данные введены неверно</span>
+								<div class="modal-form__item">
+									<div class="modal-form__checkboxes">
+										<div class="square-checkbox modal-form__checkbox">
+											<input type="checkbox" class="square-checkbox__input" id="filter-modal-1-01">
+											<label for="filter-modal-1-01" class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Эксклюзив</span>
+											</label>
 										</div>
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="text" class="input-field__input" placeholder="">
-											</div>
-											<span class="input-field__error">Данные введены неверно</span>
+										<div class="square-checkbox modal-form__checkbox">
+											<input type="checkbox" class="square-checkbox__input" id="filter-modal-1-02">
+											<label for="filter-modal-1-02" class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Закрытые продажи</span>
+											</label>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">КП/ЖК</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Направление</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Валюта</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Стоимость (₽)</span>
-								<div class="input-field modal-form__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="number" class="input-field__input" placeholder="">
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Удаленность от МКАД (км)</span>
+									<div class="input-field modal-form__input">
+										<div class="input-field__wrapper">
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="text" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
 											</div>
-											<span class="input-field__error">Данные введены неверно</span>
-										</div>
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="number" class="input-field__input" placeholder="">
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="text" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
 											</div>
-											<span class="input-field__error">Данные введены неверно</span>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Тип объекта</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">КП/ЖК</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Отделка</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Валюта</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Площадь дома (м²) </span>
-								<div class="input-field modal-form__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="number" class="input-field__input" placeholder="">
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Стоимость (₽)</span>
+									<div class="input-field modal-form__input">
+										<div class="input-field__wrapper">
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="number" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
 											</div>
-											<span class="input-field__error">Данные введены неверно</span>
-										</div>
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="number" class="input-field__input" placeholder="">
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="number" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
 											</div>
-											<span class="input-field__error">Данные введены неверно</span>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Количество спален</span>
-								<div class="input-field modal-form__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="number" class="input-field__input" placeholder="">
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Тип объекта</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Отделка</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Площадь дома (м²) </span>
+									<div class="input-field modal-form__input">
+										<div class="input-field__wrapper">
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="number" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
 											</div>
-											<span class="input-field__error">Данные введены неверно</span>
-										</div>
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="number" class="input-field__input" placeholder="">
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="number" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
 											</div>
-											<span class="input-field__error">Данные введены неверно</span>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Материал стен</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Площадь участка (сотки)</span>
-								<div class="input-field modal-form__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="number" class="input-field__input" placeholder="">
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Количество спален</span>
+									<div class="input-field modal-form__input">
+										<div class="input-field__wrapper">
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="number" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
 											</div>
-											<span class="input-field__error">Данные введены неверно</span>
-										</div>
-										<div class="input-field__item">
-											<div class="input-field__inner">
-												<input type="number" class="input-field__input" placeholder="">
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="number" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
 											</div>
-											<span class="input-field__error">Данные введены неверно</span>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Тип участка</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Материал стен</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Оснащение</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Площадь участка (сотки)</span>
+									<div class="input-field modal-form__input">
+										<div class="input-field__wrapper">
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="number" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
+											</div>
+											<div class="input-field__item">
+												<div class="input-field__inner">
+													<input type="number" class="input-field__input" placeholder="">
+												</div>
+												<span class="input-field__error">Данные введены неверно</span>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Куратор</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Тип участка</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Контрагент</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Оснащение</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="modal-form__inner">
-							<div class="modal-form__item modal-form__item--row">
-								<span class="modal-form__label">Статус контрагента</span>
-								<div class="default-select modal-form__select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Выберите значение</option>
-										<option value="1">Значение 1</option>
-										<option value="2">Значение 2</option>
-										<option value="3">Значение 3</option>
-									</select>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Куратор</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Контрагент</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="modal-form__inner">
+								<div class="modal-form__item modal-form__item--row">
+									<span class="modal-form__label">Статус контрагента</span>
+									<div class="default-select modal-form__select">
+										<select class="js-select">
+											<option value="0" data-placeholder="true">Выберите значение</option>
+											<option value="1">Значение 1</option>
+											<option value="2">Значение 2</option>
+											<option value="3">Значение 3</option>
+										</select>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="modal__bottom">
-					<a href="#" class="modal__btn btn btn--sm btn--grey" disabled>Сбросить фильтр</a>
-					<a href="#" class="modal__btn modal__btn--wide btn btn--sm" disabled>Показать</a>
+					<div class="modal__bottom">
+						<a href="#" class="modal__btn btn btn--sm btn--grey" disabled>Сбросить фильтр</a>
+						<a href="#" class="modal__btn modal__btn--wide btn btn--sm" disabled>Показать</a>
+					</div>
 				</div>
 			</div>
 		</div>
